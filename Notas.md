@@ -2,10 +2,10 @@
 
 ## Configuración
 
-### git config --global user.name ""
+### git config --global user.name "nombre_usuario"
 Configura el nombre de manera global en git
 
-### git config --global user.email ""
+### git config --global user.email "correo_usuario"
 Configura el correo electronico de manera global
 
 ### git config --list
@@ -14,13 +14,13 @@ Me muestra todas las configuraciones disponibles
 ### git config --global core.editor "code --wait"
 Configura vsc como editor de codigo para realizar los commits
 
-## git config --global autocrlf
+## git config --global core.autocrlf
 Ayuda a evitar conflictos cuando diferentes sistemas operativos como linux/mac y windows trabajan en conjunto en el mismo repositorio
 
 ### Natas:
 - Existen 3 gerarquias: system, global, local las mas importantes o mas relavantes van de local hasta system.
-- Puedo ver las configuraciones segun el alcanse de estas usando: git --alcance --list
-- El comando git config --global autocrlf en windows continua con true y en linux/mac con input
+- Puedo ver las configuraciones segun el alcanse de estas usando: git --local(system/global) --list
+- El comando git config --global core.autocrlf en windows continua con true y en linux/mac con input
 
 ## Comandos basicos de git
 
@@ -44,11 +44,11 @@ Realiza una captura de los cambios que llevamos hasta el momento subiendolos al 
 
 ## Comandos bascios de git
 
-### git restore 
+### git restore --stage nombre_archivo
 Restaura los archivos que estan en el stage
 
-### git checkout nombe_archivo
-Vuelve a los ultmos cambios guardados
+### git checkout nombre_archivo
+Vuelve a los ultimos cambios guardados
 
 ### git reset --hard nombre_archivo
 Devuelve los elementos del area de stage(Vuelve al ultimo commit)
@@ -61,3 +61,21 @@ Forma mas corta de presentear status
 
 ### Notas :
 - git checkout no funciona cuando el archivo esta en stage
+## Comandos intermedios de git
+
+### git show 
+Muestra todo el contenido de un archivo de un commit 
+### git diff --stage 
+Muestra la diferencia que hay de un archivo en stage a uno que esta en el repositorio.
+
+### git log 
+Me muestra toda la informacion de los commits echos hasta el momento
+## Notas : 
+- git log --oneline meustra los hast de los commits de manera recortada y los datos de los commit reducida
+- git config --global core.abbrev (cantidad): Esto aumenta el numero del hast o lo disminuye
+- git diff tambien nos sirve para comparar dos commits, para ello se colocan los hast de cada uno despues del git diff 
+
+## Modificar commits
+
+### git commit --amend 
+Modifica el comentario del commit
