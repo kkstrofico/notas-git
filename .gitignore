@@ -5,4 +5,11 @@ ejemplo.txt
 # Para evitar que un conjunto de archivos con la misma informacion se suban se usa el *
 *.txt
 
-#Designorar
+#Para evitar que un archivo especifico sea ignorado
+!ejemplo1.txt
+
+#Para ignorar todos los elementos de una carpeta se usa
+carpetaEjemplo /
+
+#Para ignorar un archivo especifico dentro de una carpeta
+carpeta2/carlitos.xls

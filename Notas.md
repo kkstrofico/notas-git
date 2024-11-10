@@ -109,4 +109,12 @@ Junta dos ramas
 ## .gitignore
 Es un archivo que evita que se suban siertos archivos o cambios al repositorio
 ### Nota:
-Revisar el documento .gitignore para mas informacion
+- Revisar el documento .gitignore para mas informacion
+- Se puede configurar un .gitinore_global para que se ingonore un archivo especifico de todos mis repositorios tiempo 2:25:57
+
+## Alias
+Simplifica comandos de git
+## git config --global alias.(nombre-nuevo-comando) 'comando'
+
+## git reflow
+
