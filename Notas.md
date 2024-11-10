@@ -48,7 +48,7 @@ Forma mas corta de presentear status
 ## Comandos medio_avanzados de git
 ### git show 
 Muestra todo el contenido de un archivo de un commit 
-### git diff --stage 
+### git diff 
 Muestra la diferencia que hay de un archivo en stage a uno que esta en el repositorio.
 ### git log 
 Me muestra toda la informacion de los commits echos hasta el momento
@@ -118,3 +118,16 @@ Simplifica comandos de git
 
 ## git reflog
 Muestra un registro de todos los movimientos del puntero
+
+# work romote 
+### git clone (link del repositorio)
+Clona un repositorio remoto a donde le indicamos
+### git push
+Sube los cambios al servidor
+### git pull 
+Descarga los cambios en el repo remoto
+### git fetch
+Descargará el contenido remoto sin modificar el estado del repositorio local.
+
+# Git Hub
+
