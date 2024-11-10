@@ -95,9 +95,18 @@ Elimina una rama especificada
 Modifica el nombre de una rama especificada(Solo hacer esto si no estamos en la rama que deseamos modificar)
 ### git branch -m nombre-rama
 De esta manera se modifican 
+### git merge rama-combinar
+Junta dos ramas
 ### Notas : 
 - git branch nombre-rama crea una rama pero nosotros seguimos en la rama en la anterior
 - Se recomienda crear una rama desde la rama principal 
 - Se puede crear una rama de la rama
 - Se recomienda usar switch para moverse y crear ramas
 - No! debemos estar en la rama que deseamos borrar para borrarla
+- Se pueden desacer la fucion de una rama eliminado el commit donde se funcionaron
+- Para combinar dos ramas debemos estar en la rama que deseamos combinar
+
+## .gitignore
+Es un archivo que evita que se suban siertos archivos o cambios al repositorio
+### Nota:
+Revisar el documento .gitignore para mas informacion
