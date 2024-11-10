@@ -116,5 +116,5 @@ Es un archivo que evita que se suban siertos archivos o cambios al repositorio
 Simplifica comandos de git
 ## git config --global alias.(nombre-nuevo-comando) 'comando'
 
-## git reflow
-
+## git reflog
+Muestra un registro de todos los movimientos del puntero
